@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/edt_txt_corner_radius">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phone_prefix"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:background="@color/middle_gray"
+        android:gravity="center"
+        android:text="+7"
+        android:textColor="@color/white"
+        android:fontFamily="@font/jost_regular_400"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="0.5dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/phone_prefix"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phone_edt_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:background="@color/middle_gray"
+        android:fontFamily="@font/jost_regular_400"
+        android:gravity="start|center"
+        android:hint="@string/phone_number"
+        android:imeOptions="actionDone"
+        android:inputType="phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_alpha_50"
+        android:textCursorDrawable="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/separator" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

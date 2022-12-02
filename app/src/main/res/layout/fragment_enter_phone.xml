@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    android:clickable="true"
+    android:paddingStart="12dp"
+    android:paddingTop="18dp"
+    android:paddingEnd="12dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/registration_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/jost_medium_500"
+        android:text="@string/registration"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/phone_layout"
+        layout="@layout/enter_phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toBottomOf="@id/registration_title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/button_corner_radius"
+        android:enabled="false"
+        android:fontFamily="@font/jost_medium_500"
+        android:gravity="center"
+        android:text="@string/continue_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:stateListAnimator="@null"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintTop_toBottomOf="@id/phone_layout" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/agreement_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/jost_regular_400"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/continue_btn"
+        tools:text="Нажимая кнопку “продолжить” вы соглашаетесь с пользовательским соглашением и политикой конфиденцальности" />
+
+    <FrameLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

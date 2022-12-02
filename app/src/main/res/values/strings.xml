@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ProDoctorov</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back">Назад</string>
+    <string name="last_step">Последний шаг</string>
+    <string name="create_password">Отлично, придумайте пароль</string>
+    <string name="registration">Регистрация</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="password">Пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="input_in_account">Вход в аккаунт</string>
+    <string name="input_prompt">Чтобы войти в Ваш аккаунт, введите пароль.</string>
+    <string name="restore_password">Восстановить пароль</string>
+    <string name="continue_btn">Продолжить</string>
+    <string name="password_recovery">Восстановление пароля</string>
+    <string name="send_sms_to_number">Мы отправили смс код на указанный номер</string>
+
+</resources>
